@@ -1,0 +1,24 @@
+Notas da documentação oficial de kubernetes
+
+--------------TOOLS----------------
+
+kubectl:
+
+É a ferramenta 'command line' que permite correr comandos contra clusters kubernetes.
+
+Serve para:
+
+     fazer 'deploy' de aplicações, 
+     inspecionar e gerenciar recursos de clusters
+     ver logs
+
+__________________________________________________________
+
+
+minikube:
+
+É uma ferramenta que permite correr kubernetes localmente. Serve para correr um cluster
+no nosso pc local para experimentar kubernetes ou para trabalho de dev diário.
+
+APARTE: a ferramenta 'kind' é tipo um minikube.
+

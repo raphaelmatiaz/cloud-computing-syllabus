@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-practice-1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: deployment-practice-1
+  template:
+    metadata:
+      labels:
+        app: deployment-practice-1
+    spec:
+      containers:
+      - name: deployment-practice-1
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+      
+

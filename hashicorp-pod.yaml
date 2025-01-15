@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hashicorp-pod
+  labels:
+    app: hashicorp
+spec:
+  containers:
+  - name: hashicorp
+    image: hashicorp:latest
+    ports:
+    - containerPort: 80

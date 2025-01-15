@@ -1,0 +1,44 @@
+Session-1
+
+1 - Perceber o que é kubernetes e para que serve:
+
+1.1. O que é kubernetes: É uma ferramenta/framework de orquestração de containers open-source, que permite automatizar:
+
+    Deployment de containers: suponho eu, a criação/ publicação para produção, de containers com serviços la dentro.
+    Scaling de containers: suponho eu, a criação de containers de forma adaptada e proporcional à necessidade e peso do trafego para o serviço.
+    Operações de containers: suponho eu, tudo aquilo que vai acontecendo ao nivel aplicacional dentro dos containers.
+
+
+É um derivado open-source da ferramenta 'bock' criada pela Google par orquestrar os seus containers, e foi criado e tornado público pela Google também.
+
+1.2. Para que serve kubernetes: Serve para orquestrar/dirigir/controlar/manipular containers, de forma a que serviços web possam usufruir de:
+
+    - Escalabilidade: criar containers em função de necessidade
+    - Availability: não haver down-time e as os containers não irem abaixo por razão de subrecarga 
+    - A ultima não me lembro
+
+2 - Aprender sobre a arquitetura kubernetes e seus componentes:
+
+2.1: A arquitetura:
+
+    Componentes chave da arquitetura:
+
+        Master Node: Faz o gerenciamento do cluster (API server, Scheduler, controller manager, etc)
+        Worker Node: Corre os workloads (kublet, kube-proxy, container runtime)
+        etcd: guarda os dados do cluster
+
+2.2 Os componentes
+
+
+3 - Explorar objetos básicos em kubernetes:
+
+    Pods:
+
+    Nodes:
+
+    Services:
+
+
+Dúvidas:
+
+Wtf is a workload?

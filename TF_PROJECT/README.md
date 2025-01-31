@@ -1,25 +1,3 @@
-1. make workspaces: creates workspaces Netfilx, Meta and Rockstar
-2. terraform workspace list: lists the created workspaces. Makes sure they are there.
-3. fiz terraform init no workspace 'Rockstar' e isto funcionou. Criou um cluster
-
-
-
-
-
-algures aqui fazer um plan dentro do workspace que estamos, e aplicar o documento de variaveis correspondente com a flag -var-file.
-
-Exemplo: 
-
-workspace Netflix: terraform plan -var-file=client_netflix.tf + terraform apply plan        workspace Rockstar terraform plan -var-file=client_rockstar.tf + terraform apply plan
-workspace Meta: terraform plan -var-file=client_meta + terraform apply plan
-
-
-REQUIREMENTS:
-
-1. ter docker ou docker desktop instalado e a correr
-2. 
-
-
 # Terraform Project: Multi-Client Kubernetes Cluster with Odoo Deployment
 
 ## Project Overview

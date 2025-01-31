@@ -116,6 +116,69 @@ resource "kubernetes_ingress_v1" "odoo_ingress" {
   }
 }
 
+
+
+# resource "kubernetes_ingress_v1" "odoo_ingress" { 
+#   for_each = toset(var.environments)
+
+#   metadata {
+#     name      = "odoo-ingress"
+#     namespace = each.key  # Dynamic namespace for each environment
+#     annotations = {
+#       "nginx.ingress.kubernetes.io/ssl-redirect" = "true"  # Enables SSL redirection
+#     }
+#   }
+
+#   spec {
+#     rule {
+#       host = "${terraform.workspace}.odoo.com"  # Adjust the hostname as needed
+
+#       http {
+#         path {
+#           path      = "/"
+#           path_type = "Prefix"
+#           backend {
+#             service {
+#               name = "odoo-service"  # Service name remains unchanged
+#               port {
+#                 number = var.app_container_port  # Reference to app container port
+#               }
+#             }
+#           }
+#         }
+#       }
+#     }
+
+#     tls {
+#       hosts       = ["${terraform.workspace}.odoo.com"]
+#       secret_name = kubernetes_secret.tls_secret.metadata[0].name  # Correct TLS secret reference
+#     }
+#   }
+# }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # resource "kubernetes_service_v1" "odoo_service" {
 #   metadata {
 #     name = "odoo-service"

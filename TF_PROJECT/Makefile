@@ -32,7 +32,6 @@ rockstar:
 
 # kubectl config get-clusters: LIST CLUSTERS
 
-
 # kubectl cluster-info : IS KUBERNETES RUNNING?
 
 # kubectl get pods -A : vai buscar os pods todos
